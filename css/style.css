@@ -290,36 +290,61 @@ header .container ul li a:hover {
     transform: translate(0, 0);
   }
 }
+@media (max-width:505px) {
+  .information {
+    width: 440px;
+  }
+  .information p {
+    width: 440px;
+  }
+}
 @media (max-width: 435px) {
+  .information {
+    width: 370px;
+  }
   .information .title {
     font-size: 30px;
   }
   .information p {
-    width: 400px;
+    width: 370px;
     margin: 20px auto;
     font-size: 20px;
   }
 }
 @media (max-width: 375px) {
+  .information {
+    width: 330px;
+  }
   .information p {
-    width: 340px;
+    width: 330px;
     margin-bottom: 20px;
     font-size: 20px;
   }
 }
 @media (max-width: 320px) {
+  .information {
+    width: 285px;
+  }
   .information p {
-    width: 300px;
+    width: 285px;
     margin-bottom: 20px;
   }
 }
 .information a {
   color: white;
-  background-color: var(--main-color);
+  background-color: #00b303;
   padding: 10px;
   font-weight: bold;
   border-radius: 6px;
   font-size: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.information a:hover {
+  background-color: var(--main-color);
 }
 /* End.information */
 /* Start Footer */
@@ -328,7 +353,7 @@ header .container ul li a:hover {
   position: absolute;
   width: 100%;
   height: 80px;
-  top: calc(100% - 80px);
+  top: calc(100vh - 80px);
   margin-bottom: 0;
 }
 .footer .container {
@@ -353,10 +378,10 @@ header .container ul li a:hover {
 .footer .container .social a:not(:last-of-type) {
   border-right: white 1px solid;
 }
-@media (max-width: 500px) {
+@media (max-width: 634px) {
   .footer {
-    height: 50px;
-    top: calc(100% - 50px);
+    height: 80px;
+    top: calc(100vh - 80px);
   }
   .footer .container {
     padding-top: 5px;
@@ -371,8 +396,8 @@ header .container ul li a:hover {
 }
 @media (max-width: 375px) {
   .footer {
-    height: 50px;
-    top: calc(100% - 50px);
+    height: 80px;
+    top: calc(100vh - 80px);
   }
   .footer .container {
     padding-top: 10px;
@@ -387,8 +412,8 @@ header .container ul li a:hover {
 }
 @media (max-width: 320px) {
   .footer {
-    height: 50px;
-    top: calc(100% - 50px);
+    height: 80px;
+    top: calc(100vh - 80px);
   }
   .footer .container {
     padding-top: 10px;
